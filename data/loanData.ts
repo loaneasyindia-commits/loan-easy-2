@@ -69,7 +69,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       "Flexible repayment tenure",
       "Personal assistance throughout"
     ],
-    ctaText: "Explore Personal Loan →",
+    ctaText: "Explore Personal Loan",
   },
   {
     id: "car-loan",
@@ -91,7 +91,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       "Pocket-friendly EMIs",
       "Fast lender evaluation"
     ],
-    ctaText: "Explore Car Loan →",
+    ctaText: "Explore Car Loan",
   },
   {
     id: "business-loan",
@@ -113,7 +113,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       "Tax benefits applicable",
       "Dedicated business advisor"
     ],
-    ctaText: "Explore Business Loan →",
+    ctaText: "Explore Business Loan",
   },
   {
     id: "balance-transfer",
@@ -135,7 +135,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       "Single-point transfer guide",
       "Transparent fee structure"
     ],
-    ctaText: "Explore Balance Transfer →",
+    ctaText: "Explore Balance Transfer",
   },
 ];
 

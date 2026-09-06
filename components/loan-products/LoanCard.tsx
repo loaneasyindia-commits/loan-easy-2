@@ -57,8 +57,9 @@ export default function LoanCard({ product, delayIndex, onOpenEMIModal }: LoanCa
         <p className="text-sm text-slate-600 mt-2 leading-relaxed">
           {product.shortDesc}
         </p>
+        <br/>
 
-        {/* Highlight Stats Strip */}
+        {/* Highlight Stats Strip
         <div className="my-5 p-3 rounded-xl bg-slate-50 border border-slate-100 grid grid-cols-2 gap-2 text-xs">
           <div>
             <span className="text-slate-400 block text-[10px] uppercase font-semibold">Indicative Interest</span>
@@ -68,7 +69,7 @@ export default function LoanCard({ product, delayIndex, onOpenEMIModal }: LoanCa
             <span className="text-slate-400 block text-[10px] uppercase font-semibold">Sanction Amount</span>
             <span className="font-extrabold text-brand-blue">{product.maxAmount}</span>
           </div>
-        </div>
+        </div> */}
 
         {/* Feature bullets */}
         <ul className="space-y-2 mb-6 text-xs text-slate-600">
