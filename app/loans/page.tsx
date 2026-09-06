@@ -2,21 +2,15 @@
 
 import React, { useState } from "react";
 import Navbar from "@/components/navbar/Navbar";
-import HeroSection from "@/components/hero/HeroSection";
-import TrustBenefits from "@/components/benefits/TrustBenefits";
 import LoanProducts from "@/components/loan-products/LoanProducts";
-import LoanJourney from "@/components/loan-process/LoanJourney";
 import DocumentsRequired from "@/components/documents/DocumentsRequired";
-import WhyChooseUs from "@/components/why-choose-us/WhyChooseUs";
 import BankPartners from "@/components/bank-partners/BankPartners";
 import CTASection from "@/components/cta/CTASection";
-import AboutSection from "@/components/about/AboutSection";
-import FAQSection from "@/components/faq/FAQSection";
 import Footer from "@/components/footer/Footer";
 import EMIModal from "@/components/common/EMIModal";
 import InquiryModal from "@/components/common/InquiryModal";
 
-export default function Home() {
+export default function LoansPage() {
   const [consultationOpen, setConsultationOpen] = useState(false);
   const [emiModalOpen, setEmiModalOpen] = useState(false);
   const [selectedLoanForEMI, setSelectedLoanForEMI] = useState("Personal Loan");
@@ -27,47 +21,40 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen flex flex-col bg-white">
-      {/* Sticky Header Navbar */}
+    <main className="min-h-screen flex flex-col bg-white pt-24">
       <Navbar onOpenConsultation={() => setConsultationOpen(true)} />
 
-      {/* Hero Section */}
-      <HeroSection
-        onOpenConsultation={() => setConsultationOpen(true)}
-        onOpenEMIModal={() => handleOpenEMIModal("Personal Loan")}
-      />
-            <AboutSection />
+      {/* Page Header */}
+      <section className="bg-gradient-to-b from-blue-50/60 to-white py-12 sm:py-16 border-b border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
+          <span className="px-3.5 py-1 rounded-full bg-blue-100/70 text-brand-blue text-xs font-bold uppercase tracking-wider">
+            Loan Solutions
+          </span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-brand-navy">
+            Our Loan Products
+          </h1>
+          <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
+            Compare and choose from Personal Loans, Car Loans, Business Loans, and Balance Transfers.
+          </p>
+        </div>
+      </section>
 
-      {/* Trust & Benefits Strip */}
-      <TrustBenefits />
-
-      {/* Loan Products Grid */}
+      {/* Loan Products */}
       <LoanProducts onOpenEMIModal={handleOpenEMIModal} />
-
-      {/* How It Works - 4 Step Journey */}
-      <LoanJourney />
 
       {/* Documents Required */}
       <DocumentsRequired />
 
-      {/* Why Choose Us - 6 Value Pillars */}
-      <WhyChooseUs />
-
       {/* Bank Partners Comparison */}
       <BankPartners />
 
-      {/* Blue CTA Banner */}
+      {/* CTA Banner */}
       <CTASection onOpenConsultation={() => setConsultationOpen(true)} />
 
-      {/* About Company Section */}
-
-      {/* FAQ Accordion Section */}
-      <FAQSection />
-
-      {/* Professional Footer */}
+      {/* Footer */}
       <Footer />
 
-      {/* Interactive Modals */}
+      {/* Modals */}
       <InquiryModal
         isOpen={consultationOpen}
         onClose={() => setConsultationOpen(false)}
