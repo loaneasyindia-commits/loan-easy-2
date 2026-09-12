@@ -18,8 +18,8 @@ export default function LoanInquiryForm({
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const targetWhatsappNumber = "917200117106";
-  const supportEmail = "support@loaneasyindia.com";
+  const targetWhatsappNumber = "919566037333";
+  const supportEmail = "LoanEasyIndia@gmail.com";
 
   const triggerWhatsappInquiry = (submittedName: string, submittedPhone: string, submittedEmail: string, type: string, amount: string) => {
     const text = `*New Loan Inquiry - LoanEasyIndia*\n\n👤 *Name:* ${submittedName}\n📱 *Mobile:* +91 ${submittedPhone}\n📧 *Email:* ${submittedEmail || "Not provided"}\n💼 *Loan Type:* ${type}\n💰 *Required Amount:* ₹${amount || "Not specified"}\n\nHi LoanEasyIndia team, please contact me regarding suitable loan options.`;
@@ -41,7 +41,7 @@ export default function LoanInquiryForm({
     setTimeout(() => {
       setLoading(false);
       setSubmitted(true);
-      // Dispatch via WhatsApp to +91 7200117106
+      // Dispatch via WhatsApp to +91 9566037333
       triggerWhatsappInquiry(name, phone, email, loanType, loanAmount);
     }, 400);
   };
@@ -55,7 +55,7 @@ export default function LoanInquiryForm({
           </div>
           <h3 className="text-xl font-extrabold text-brand-navy">Inquiry Sent to Advisor!</h3>
           <p className="text-xs text-slate-600 leading-relaxed max-w-xs mx-auto">
-            Thank you, <span className="font-bold text-brand-blue">{name}</span>. Your loan request has been sent to our loan desk (+91 7200117106 & support@loaneasyindia.com).
+            Thank you, <span className="font-bold text-brand-blue">{name}</span>. Your loan request has been sent to our loan desk (+91 9566037333 & LoanEasyIndia@gmail.com).
           </p>
           <div className="p-3 bg-blue-50/70 rounded-xl border border-blue-100 text-xs text-brand-navy flex items-center justify-center gap-2">
             <MessageSquare className="w-4 h-4 text-emerald-600 flex-shrink-0" />
@@ -189,7 +189,7 @@ export default function LoanInquiryForm({
             {/* Micro note */}
             <div className="flex items-center gap-1.5 text-[11px] text-slate-500 pt-1">
               <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
-              <span>Direct WhatsApp (+91 7200117106) & Email dispatch.</span>
+              <span>Direct WhatsApp (+91 9566037333) & Email dispatch.</span>
             </div>
 
             {/* CTA Button */}

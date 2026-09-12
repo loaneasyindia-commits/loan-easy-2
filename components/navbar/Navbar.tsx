@@ -277,7 +277,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
                   className="w-full py-3 px-4 bg-slate-100 text-brand-navy font-bold text-sm rounded-xl flex items-center justify-center gap-2"
                 >
                   <PhoneCall className="w-4 h-4 text-brand-blue" />
-                  <span>Talk to Us (+91 7200117106)</span>
+                  <span>Talk to Us (+91 9566037333)</span>
                 </button>
               )}
               <a

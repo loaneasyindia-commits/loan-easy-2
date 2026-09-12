@@ -42,10 +42,10 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <span className="text-xs font-semibold text-slate-400 block">WhatsApp & Phone Desk</span>
-                      <a href="tel:+917200117106" className="font-bold text-slate-900 hover:text-brand-blue">
-                        +91 7200117106
+                      <a href="tel:+919566037333" className="font-bold text-slate-900 hover:text-brand-blue">
+                        +91 9566037333
                       </a>
-                      <p className="text-xs text-slate-500 mt-0.5">Toll Free: 1800 266 8989</p>
+                      {/* <p className="text-xs text-slate-500 mt-0.5">Toll Free: 1800 266 8989</p> */}
                     </div>
                   </div>
 
@@ -56,12 +56,12 @@ export default function ContactPage() {
                     <div>
                       <span className="text-xs font-semibold text-slate-400 block">Instant WhatsApp Inquiry</span>
                       <a
-                        href="https://wa.me/917200117106?text=Hi%20LoanEasyIndia"
+                        href="https://wa.me/919566037333?text=Hi%20LoanEasyIndia"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="font-bold text-emerald-600 hover:underline"
                       >
-                        Chat with +91 7200117106 →
+                        Chat with +91 9566037333 →
                       </a>
                     </div>
                   </div>
@@ -72,8 +72,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <span className="text-xs font-semibold text-slate-400 block">Email Support</span>
-                      <a href="mailto:support@loaneasyindia.com" className="font-semibold text-slate-800 hover:text-brand-blue">
-                        support@loaneasyindia.com
+                      <a href="mailto:LoanEasyIndia@gmail.com" className="font-semibold text-slate-800 hover:text-brand-blue">
+                        LoanEasyIndia@gmail.com
                       </a>
                     </div>
                   </div>

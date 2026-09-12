@@ -21,8 +21,8 @@ export default function InquiryModal({ isOpen, onClose }: InquiryModalProps) {
 
   if (!isOpen) return null;
 
-  const targetWhatsappNumber = "917200117106";
-  const supportEmail = "support@loaneasyindia.com";
+  const targetWhatsappNumber = "919566037333";
+  const supportEmail = "LoanEasyIndia@gmail.com";
 
   const triggerWhatsappInquiry = () => {
     const text = `*Callback Request - LoanEasyIndia*\n\n👤 *Name:* ${formData.name}\n📱 *Mobile:* +91 ${formData.phone}\n📧 *Email:* ${formData.email || "Not provided"}\n💼 *Loan Type:* ${formData.loanType}\n⏰ *Preferred Time:* ${formData.timeSlot}\n\nHi LoanEasyIndia team, please call me back to discuss loan options.`;
@@ -74,7 +74,7 @@ export default function InquiryModal({ isOpen, onClose }: InquiryModalProps) {
             </p>
             <div className="p-3 bg-blue-50 rounded-xl border border-blue-100 text-xs text-slate-600 flex items-center justify-center gap-2">
               <ShieldCheck className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-              <span>Forwarded to WhatsApp (+91 7200117106) & Email.</span>
+              <span>Forwarded to WhatsApp (+91 9566037333) & Email.</span>
             </div>
             <div className="flex flex-col sm:flex-row gap-2 pt-2">
               <button

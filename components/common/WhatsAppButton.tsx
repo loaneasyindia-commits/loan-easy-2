@@ -5,7 +5,7 @@ import { MessageCircle, X } from "lucide-react";
 
 export default function WhatsAppButton() {
   const [showTooltip, setShowTooltip] = useState(true);
-  const phoneNumber = "917200117106";
+  const phoneNumber = "919566037333";
   const message = encodeURIComponent(
     "Hi LoanEasyIndia! I would like to inquire about loan options. Please assist me."
   );
@@ -36,7 +36,7 @@ export default function WhatsAppButton() {
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Chat on WhatsApp with LoanEasyIndia (+91 7200117106)"
+        aria-label="Chat on WhatsApp with LoanEasyIndia (+91 9566037333)"
         className="w-14 h-14 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 ring-4 ring-emerald-500/20"
       >
         {/* WhatsApp Icon */}

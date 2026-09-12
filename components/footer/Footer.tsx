@@ -96,15 +96,11 @@ export default function Footer() {
             <ul className="space-y-2.5 text-xs text-slate-400">
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-blue-400 flex-shrink-0" />
-                <span className="text-slate-200">+91 7200117106 / 1800 266 8989</span>
+                <span className="text-slate-200">+91 9566037333</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-blue-400 flex-shrink-0" />
-                <span className="text-slate-200">support@loaneasyindia.com</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" />
-                <span>Financial District, BKC, Mumbai - 400051, Maharashtra, India</span>
+                <span className="text-slate-200">LoanEasyIndia@gmail.com</span>
               </li>
             </ul>
 
