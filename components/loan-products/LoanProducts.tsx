@@ -18,8 +18,8 @@ export default function LoanProducts({ onOpenEMIModal }: LoanProductsProps) {
           subtitle="Explore loan options designed around your financial needs with flexible terms & personal support."
         />
 
-        {/* 4 Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 sm:mt-16">
+        {/* Loan Cards Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-12 sm:mt-16">
           {LOAN_PRODUCTS.map((product, idx) => (
             <LoanCard
               key={product.id}

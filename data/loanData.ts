@@ -1,7 +1,7 @@
 export interface LoanProduct {
   id: string;
   title: string;
-  iconName: "User" | "Car" | "Briefcase" | "RefreshCw";
+  iconName: "User" | "Car" | "Briefcase" | "RefreshCw" | "Home" | "Landmark" | "Building";
   categoryColor: string;
   badgeBg: string;
   badgeText: string;
@@ -116,6 +116,72 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
     ctaText: "Explore Business Loan",
   },
   {
+    id: "home-loan",
+    title: "Home Loan",
+    iconName: "Home",
+    categoryColor: "#4F46E5", // Indigo
+    badgeBg: "bg-indigo-50 text-indigo-700 border-indigo-200",
+    badgeText: "Lowest Rates",
+    borderColor: "border-t-indigo-600",
+    accentColor: "text-indigo-600",
+    shortDesc: "Finance your dream home with low rates & long tenure.",
+    fullDesc: "Turn your homeownership dream into reality with attractive interest rates, high funding eligibility, and extended repayment terms.",
+    indicativeRate: "From 8.40% p.a.",
+    maxAmount: "Up to ₹5 Crores",
+    tenureRange: "Up to 30 Years",
+    features: [
+      "Tax benefits under Sec 80C & 24",
+      "PMAY subsidy assistance",
+      "Flexible repayment tenure",
+      "Step-up & step-down EMIs"
+    ],
+    ctaText: "Explore Home Loan",
+  },
+  {
+    id: "plot-loan",
+    title: "Plot Loan",
+    iconName: "Landmark",
+    categoryColor: "#059669", // Teal/Emerald
+    badgeBg: "bg-teal-50 text-teal-700 border-teal-200",
+    badgeText: "Land Purchase",
+    borderColor: "border-t-teal-600",
+    accentColor: "text-teal-600",
+    shortDesc: "Purchase residential plots or land with easy financing.",
+    fullDesc: "Acquire residential plots in municipal or approved layouts with customized loan structures and competitive interest rates.",
+    indicativeRate: "From 8.65% p.a.",
+    maxAmount: "Up to ₹2 Crores",
+    tenureRange: "Up to 20 Years",
+    features: [
+      "Approved plot financing",
+      "Plot + Construction combo",
+      "Easy balance transfer facility",
+      "Hassle-free legal verification"
+    ],
+    ctaText: "Explore Plot Loan",
+  },
+  {
+    id: "lap-loan",
+    title: "LAP - Loan Against Property",
+    iconName: "Building",
+    categoryColor: "#7C3AED", // Purple/Violet
+    badgeBg: "bg-purple-50 text-purple-700 border-purple-200",
+    badgeText: "High Funding",
+    borderColor: "border-t-purple-600",
+    accentColor: "text-purple-600",
+    shortDesc: "Leverage residential or commercial property for high funding.",
+    fullDesc: "Unlock the hidden equity in your residential or commercial property to fund business expansion, higher education, or personal needs.",
+    indicativeRate: "From 9.25% p.a.",
+    maxAmount: "Up to ₹10 Crores",
+    tenureRange: "Up to 15 Years",
+    features: [
+      "High loan-to-value (LTV)",
+      "Residential & commercial property",
+      "Lower rates than personal loan",
+      "Retain property ownership"
+    ],
+    ctaText: "Explore LAP",
+  },
+  {
     id: "balance-transfer",
     title: "Balance Transfer",
     iconName: "RefreshCw",
@@ -156,7 +222,7 @@ export const TRUST_BENEFITS: BenefitItem[] = [
     id: "b3",
     iconName: "Layers",
     title: "All Loan Options",
-    description: "Personal, Car, Business loans & Balance transfer under one roof.",
+    description: "Personal, Car, Business, Home, Plot loans, LAP & Balance transfer under one roof.",
   },
   {
     id: "b4",
@@ -359,7 +425,7 @@ export const FAQ_ITEMS: FAQItemData[] = [
   {
     id: "faq-1",
     question: "What types of loans do you offer?",
-    answer: "LoanEasyIndia assists with four primary loan categories: Personal Loans (for medical, wedding, travel, or general personal expenses), Car Loans (new and pre-owned vehicle financing), Business Loans (working capital and enterprise expansion), and Balance Transfers (lowering monthly interest on existing loans).",
+    answer: "LoanEasyIndia assists with seven primary loan categories: Personal Loans, Car Loans, Business Loans, Home Loans, Plot Loans, Loan Against Property (LAP), and Balance Transfers.",
     category: "General",
   },
   {

@@ -10,7 +10,7 @@ interface DocumentRow {
 }
 
 export default function DocumentsRequired() {
-  const [activeTab, setActiveTab] = useState<"personal" | "car" | "business" | "transfer">("personal");
+  const [activeTab, setActiveTab] = useState<"personal" | "car" | "business" | "home" | "plot" | "lap" | "transfer">("personal");
 
   const documentData: Record<string, { rows: DocumentRow[]; sampleEmi: string; amount: string; irr: string; tenure: string }> = {
     personal: {
@@ -64,6 +64,53 @@ export default function DocumentsRequired() {
         { name: "Passport size photo", salaried: false, selfEmployed: true },
       ],
     },
+    home: {
+      sampleEmi: "₹43,075",
+      amount: "₹50L",
+      irr: "8.40%",
+      tenure: "240 mo",
+      rows: [
+        { name: "Aadhar card", salaried: true, selfEmployed: true },
+        { name: "PAN Card", salaried: true, selfEmployed: true },
+        { name: "Property Documents (Sale Deed / Agreement)", salaried: true, selfEmployed: true },
+        { name: "Approved Building Map / Lay-out Plan", salaried: true, selfEmployed: true },
+        { name: "Account statement (latest 6 months)", salaried: true, selfEmployed: true },
+        { name: "Salary Slip (latest 3 months) / 2 Yrs ITR", salaried: true, selfEmployed: true },
+        { name: "Latest 2 years Form 16 / Audited P&L", salaried: true, selfEmployed: true },
+        { name: "Passport size photo", salaried: true, selfEmployed: true },
+      ],
+    },
+    plot: {
+      sampleEmi: "₹21,925",
+      amount: "₹25L",
+      irr: "8.65%",
+      tenure: "180 mo",
+      rows: [
+        { name: "Aadhar card", salaried: true, selfEmployed: true },
+        { name: "PAN Card", salaried: true, selfEmployed: true },
+        { name: "Plot Allotment Letter / Sale Agreement", salaried: true, selfEmployed: true },
+        { name: "Approved Layout Copy & Property Tax Receipt", salaried: true, selfEmployed: true },
+        { name: "Account statement (latest 6 months)", salaried: true, selfEmployed: true },
+        { name: "Salary Slip (latest 3 months) / 2 Yrs ITR", salaried: true, selfEmployed: true },
+        { name: "Passport size photo", salaried: true, selfEmployed: true },
+      ],
+    },
+    lap: {
+      sampleEmi: "₹51,460",
+      amount: "₹50L",
+      irr: "9.25%",
+      tenure: "180 mo",
+      rows: [
+        { name: "Aadhar card of Property Owner(s)", salaried: true, selfEmployed: true },
+        { name: "PAN Card of Owner(s) / Firm", salaried: true, selfEmployed: true },
+        { name: "Title Deed & Chain of Property Documents", salaried: true, selfEmployed: true },
+        { name: "Approved Property Map & Tax Paid Receipt", salaried: true, selfEmployed: true },
+        { name: "Bank Account Statement (latest 12 months)", salaried: true, selfEmployed: true },
+        { name: "Last 2-3 Years ITR & Audited Computation", salaried: false, selfEmployed: true },
+        { name: "Salary Slip (latest 3 months) & Form 16", salaried: true, selfEmployed: false },
+        { name: "Passport size photo", salaried: true, selfEmployed: true },
+      ],
+    },
     transfer: {
       sampleEmi: "₹18,200",
       amount: "₹10L",
@@ -112,6 +159,9 @@ export default function DocumentsRequired() {
                 { id: "personal", label: "Personal Loan" },
                 { id: "car", label: "Car Loan" },
                 { id: "business", label: "Business Loan" },
+                { id: "home", label: "Home Loan" },
+                { id: "plot", label: "Plot Loan" },
+                { id: "lap", label: "LAP" },
                 { id: "transfer", label: "Balance Transfer" },
               ].map((tab) => (
                 <button

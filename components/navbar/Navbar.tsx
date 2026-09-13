@@ -43,6 +43,9 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
     { name: "Personal Loan", href: "/loans#personal-loan", badge: "Red", color: "bg-red-500" },
     { name: "Car Loan", href: "/loans#car-loan", badge: "Green", color: "bg-emerald-500" },
     { name: "Business Loan", href: "/loans#business-loan", badge: "Yellow", color: "bg-amber-500" },
+    { name: "Home Loan", href: "/loans#home-loan", badge: "Indigo", color: "bg-indigo-500" },
+    { name: "Plot Loan", href: "/loans#plot-loan", badge: "Teal", color: "bg-teal-500" },
+    { name: "LAP - Loan Against Property", href: "/loans#lap-loan", badge: "Purple", color: "bg-purple-500" },
     { name: "Balance Transfer", href: "/loans#balance-transfer", badge: "Blue", color: "bg-brand-blue" },
   ];
 

@@ -84,11 +84,14 @@ export default function EMIModal({
             <label className="block text-xs font-semibold text-slate-600 uppercase tracking-wider mb-2">
               Select Loan Type
             </label>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
               {[
                 { name: "Personal Loan", rate: 10.5 },
                 { name: "Car Loan", rate: 8.75 },
                 { name: "Business Loan", rate: 13.5 },
+                { name: "Home Loan", rate: 8.4 },
+                { name: "Plot Loan", rate: 8.65 },
+                { name: "LAP - Loan Against Property", rate: 9.25 },
                 { name: "Balance Transfer", rate: 9.25 },
               ].map((item) => (
                 <button

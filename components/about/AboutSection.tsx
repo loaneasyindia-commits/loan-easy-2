@@ -26,7 +26,7 @@ export default function AboutSection() {
             </p>
 
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-              From Car Loans for your dream vehicle to Personal Loans, Business Loans, and Balance Transfers, we help customers explore suitable loan options with personal assistance throughout the process.
+              From Home, Plot, & LAP loans to Personal, Car, Business Loans, and Balance Transfers, we help customers explore suitable loan options with personal assistance throughout the process.
             </p>
 
             {/* Micro Highlights Grid */}

@@ -160,6 +160,9 @@ export default function LoanInquiryForm({
                   <option value="Personal Loan">Personal Loan</option>
                   <option value="Car Loan">Car Loan</option>
                   <option value="Business Loan">Business Loan</option>
+                  <option value="Home Loan">Home Loan</option>
+                  <option value="Plot Loan">Plot Loan</option>
+                  <option value="LAP - Loan Against Property">LAP - Loan Against Property</option>
                   <option value="Balance Transfer">Balance Transfer</option>
                 </select>
                 <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none text-slate-400 text-xs">

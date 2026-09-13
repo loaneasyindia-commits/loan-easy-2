@@ -76,6 +76,9 @@ export default function Footer() {
                 { name: "Personal Loan", href: "#loans" },
                 { name: "Car Loan", href: "#loans" },
                 { name: "Business Loan", href: "#loans" },
+                { name: "Home Loan", href: "#loans" },
+                { name: "Plot Loan", href: "#loans" },
+                { name: "LAP - Loan Against Property", href: "#loans" },
                 { name: "Balance Transfer", href: "#loans" },
               ].map((prod) => (
                 <li key={prod.name}>

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { User, Car, Briefcase, RefreshCw, ArrowRight, CheckCircle, Calculator } from "lucide-react";
+import { User, Car, Briefcase, RefreshCw, Home, Landmark, Building, ArrowRight, CheckCircle, Calculator } from "lucide-react";
 import { LoanProduct } from "@/data/loanData";
 
 interface LoanCardProps {
@@ -19,6 +19,12 @@ export default function LoanCard({ product, delayIndex, onOpenEMIModal }: LoanCa
         return <Car className="w-6 h-6 text-emerald-600" />;
       case "Briefcase":
         return <Briefcase className="w-6 h-6 text-amber-600" />;
+      case "Home":
+        return <Home className="w-6 h-6 text-indigo-600" />;
+      case "Landmark":
+        return <Landmark className="w-6 h-6 text-teal-600" />;
+      case "Building":
+        return <Building className="w-6 h-6 text-purple-600" />;
       case "RefreshCw":
         return <RefreshCw className="w-6 h-6 text-blue-600" />;
       default:

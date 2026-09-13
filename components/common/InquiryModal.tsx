@@ -184,6 +184,9 @@ export default function InquiryModal({ isOpen, onClose }: InquiryModalProps) {
                     <option value="Personal Loan">Personal Loan</option>
                     <option value="Car Loan">Car Loan</option>
                     <option value="Business Loan">Business Loan</option>
+                    <option value="Home Loan">Home Loan</option>
+                    <option value="Plot Loan">Plot Loan</option>
+                    <option value="LAP - Loan Against Property">LAP - Loan Against Property</option>
                     <option value="Balance Transfer">Balance Transfer</option>
                   </select>
                 </div>

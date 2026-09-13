@@ -34,7 +34,7 @@ export default function LoansPage() {
             Our Loan Products
           </h1>
           <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
-            Compare and choose from Personal Loans, Car Loans, Business Loans, and Balance Transfers.
+            Compare and choose from Personal, Car, Business, Home, Plot Loans, LAP & Balance Transfers.
           </p>
         </div>
       </section>

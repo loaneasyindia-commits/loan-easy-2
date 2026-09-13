@@ -33,7 +33,7 @@ export default function HeroSection({ onOpenConsultation }: HeroSectionProps) {
               One-Stop Solution for All Your Loan Needs
             </h2>
 
-            {/* Loan Category Colored Bullet Indicators (Exact match to Image 1) */}
+            {/* Loan Category Colored Bullet Indicators */}
             <div className="flex flex-wrap items-center gap-x-5 gap-y-2.5 pt-1 text-sm font-semibold text-slate-800">
               <div className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-red-600"></span>
@@ -46,6 +46,18 @@ export default function HeroSection({ onOpenConsultation }: HeroSectionProps) {
               <div className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
                 <span>Business Loan</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
+                <span>Home Loan</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-teal-600"></span>
+                <span>Plot Loan</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-purple-600"></span>
+                <span>LAP (Property)</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-brand-blue"></span>
